@@ -47,13 +47,15 @@
     z-index: 1000;
     opacity: 0; /* Start invisible */
     /* transition: opacity 0.5s; */ 
+    margin: 0px 0px 0px -70px;
+    max-width: 300px;
 }
 
 .search-container3{
     border: solid 1px #000;
     position: absolute;
     top: 2px;
-    /* max-width: 300px; */
+    /* max-width: 100px; */
     display: flex;
     height: 40px;
     border-radius: 20px; /* Adjust to match the border-radius in the image */
@@ -65,6 +67,8 @@
     /* transition: opacity 0.5s; */
     left: 50%; /* Mueve el elemento a la mitad del contenedor */
     transform: translateX(-50%);
+    margin-left: 10px;
+    margin-right: -85px;
 }
 
 .lqd-fade-sides:not(.carousel-container) {
