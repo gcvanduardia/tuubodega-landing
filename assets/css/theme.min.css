@@ -1,5 +1,6 @@
 :root {
-    --lqd-color-primary: #184341;
+    /* --lqd-color-primary: #184341; */
+	--lqd-color-primary: #FFCD28;
     --lqd-color-secondary: #54595f;
     --lqd-color-link: #5b7bfb;
     --lqd-color-link-hover: #181b31;
