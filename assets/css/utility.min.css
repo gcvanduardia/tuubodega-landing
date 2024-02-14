@@ -2,7 +2,7 @@
     display: flex;
     border-radius: 20px; /* Adjust to match the border-radius in the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* This adds a shadow to the container */
-    padding: 50px 10px 0px 10px; /* Adjust the padding as needed */
+    margin: 50px 10px 0px 10px; /* Adjust the padding as needed */
     z-index: 1000;
     opacity: 0; /* Start invisible */
     transition: opacity 1s; /* Transition the opacity property over 1 second */
@@ -21,6 +21,9 @@
     outline: none;
 }
 .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     border: none;
     background-color: orange; /* Match the button color to the image */
@@ -33,6 +36,33 @@
 /* Adjust the placeholder color */
 .search-input::placeholder {
     color: #cccccc;
+}
+
+.search-container2{
+    display: flex;
+    height: 44px;
+    border-radius: 20px; /* Adjust to match the border-radius in the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* This adds a shadow to the container */
+    margin: auto 0px auto -50px; /* Adjust the padding as needed */
+    z-index: 1000;
+    opacity: 0; /* Start invisible */
+    /* transition: opacity 0.5s; */ 
+}
+
+.search-container3{
+    position: absolute;
+    right: 50px;
+    top: 2px;
+    min-width: 250px;
+    display: flex;
+    height: 40px;
+    border-radius: 20px; /* Adjust to match the border-radius in the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* This adds a shadow to the container */
+    margin: 0px 0px 0px 0px; /* Adjust the padding as needed */
+    z-index: 1000;
+    opacity: 0;
+    font-size: small;
+    /* transition: opacity 0.5s; */
 }
 
 .lqd-fade-sides:not(.carousel-container) {
