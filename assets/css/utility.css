@@ -1,3 +1,40 @@
+.search-container {
+    display: flex;
+    border-radius: 20px; /* Adjust to match the border-radius in the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* This adds a shadow to the container */
+    padding: 50px 10px 0px 10px; /* Adjust the padding as needed */
+    z-index: 1000;
+    opacity: 0; /* Start invisible */
+    transition: opacity 1s; /* Transition the opacity property over 1 second */
+}
+.search-container.visible {
+    opacity: 1; /* End visible */
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 16px; /* Adjust the font size as needed */
+    outline: none;
+}
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: orange; /* Match the button color to the image */
+    color: white;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-transform: uppercase; /* This makes the text uppercase */
+}
+/* Adjust the placeholder color */
+.search-input::placeholder {
+    color: #cccccc;
+}
+
 .lqd-fade-sides:not(.carousel-container) {
 	mask-image: linear-gradient(to right, transparent 0%, #000 20%, #000 80%, transparent 100%);
 	-webkit-mask-image: linear-gradient(to right, transparent 0%, #000 20%, #000 80%, transparent 100%);
