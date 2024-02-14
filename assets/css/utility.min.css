@@ -10,6 +10,7 @@
 .search-container.visible {
     opacity: 1; /* End visible */
 }
+
 .search-input {
     width: 100%;
     border: none;
