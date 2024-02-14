@@ -39,7 +39,7 @@
 }
 
 .search-container2{
-    border: solid 1px blue;
+    border: solid 1px yellow;
     display: flex;
     border-radius: 20px; /* Adjust to match the border-radius in the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* This adds a shadow to the container */
