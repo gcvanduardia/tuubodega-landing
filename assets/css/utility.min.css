@@ -39,8 +39,8 @@
 }
 
 .search-container2{
+    border: solid 1px #000;
     display: flex;
-    height: 44px;
     border-radius: 20px; /* Adjust to match the border-radius in the image */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* This adds a shadow to the container */
     margin: auto 0px auto -50px; /* Adjust the padding as needed */
@@ -50,10 +50,10 @@
 }
 
 .search-container3{
+    border: solid 1px #000;
     position: absolute;
-    right: 50px;
     top: 2px;
-    min-width: 250px;
+    /* max-width: 300px; */
     display: flex;
     height: 40px;
     border-radius: 20px; /* Adjust to match the border-radius in the image */
@@ -61,8 +61,10 @@
     margin: 0px 0px 0px 0px; /* Adjust the padding as needed */
     z-index: 1000;
     opacity: 0;
-    font-size: small;
+    font-size: smaller;
     /* transition: opacity 0.5s; */
+    left: 50%; /* Mueve el elemento a la mitad del contenedor */
+    transform: translateX(-50%);
 }
 
 .lqd-fade-sides:not(.carousel-container) {
