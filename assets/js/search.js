@@ -8,7 +8,7 @@ document.querySelector(SEARCH_CONTAINER_SELECTOR).classList.add('visible');
 
 function search(inputElement) {
     const inputValue = inputElement.value;
-    const url = 'https://app.tuubodega.com/search/' + encodeURIComponent(inputValue);
+    const url = 'https://app.tuubodega.com?search=' + encodeURIComponent(inputValue);
     window.location.href = url;
 }
 
