@@ -1,0 +1,402 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header y navegación */
+.header {
+    background-color: #f79d06;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background-color: #f79d06;
+    padding: 60px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #f79d06;
+    border: none;
+    border-radius: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Beneficios */
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 100px;
+    background-color: #f9f9f9;
+}
+
+.benefit-card {
+    background-color: #dad5d3;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px #ef7b00cc ;
+    padding: 30px;
+    text-align: left;
+    margin: 0px 40px;
+    width: 30%;
+}
+
+.benefit-card img {
+    max-width: 80px;
+}
+
+.benefit-card h3 {
+    font-size: 20px;
+    color: black;
+}
+
+.benefit-card p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: black;
+}
+
+/* Categorías */
+.categories {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* Añade posición relativa para que los elementos hijos con posición absoluta se posicionen respecto a esta sección */
+    z-index: 1;
+}
+
+.floating-image1 {
+    position: absolute;
+    bottom: -100px;
+    left: -30px;
+    width: 350px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    z-index: 0; /* Coloca la imagen detrás del contenido */
+}
+
+.categories h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #EF7A00;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 50px;
+    background-color: #f9f9f9;
+
+}
+
+.category-item {
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 20%;
+    font-size: 18px;
+    background-color: #dad5d3;
+    z-index: 1;
+}
+
+.category-item img {
+    width: 70%;
+}
+.category-item h3 {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+.uno{
+    background-color: #0e1e22;
+}
+
+.uno h3{
+    color: #fff;
+}
+
+/* Productos Destacados */
+.featured-products {
+    text-align: center; /* Centra el contenido dentro de la sección */
+    display: flex;
+    justify-content: center;
+    position: relative; /* Añade posición relativa para que los elementos hijos con posición absoluta se posicionen respecto a esta sección */
+}
+
+.product-card {
+    background-color: #dad5d3;
+    border-radius: 50px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 80%;
+    z-index: 1;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 40px;
+}
+
+.product-card img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.product-card h2{
+    font-size: 25px;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: solid 3px #f79d06;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.product-card h3 {
+    font-size: 40px;
+    color: #EF7A00;
+    width: 60%;
+}
+
+.product-card p {
+    font-size: 25px;
+    color: #EF7A00;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.product-card button {
+    background-color: #EF7A00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    display: block; /* Hace que el botón sea un elemento de bloque */
+    margin: 20px auto 0 auto; /* Centra el botón horizontalmente */
+}
+
+.floating-image2 {
+    position: absolute;
+    bottom: -40px;
+    right: -70px;
+    width: 350px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    z-index: 0; /* Coloca la imagen detrás del contenido */
+}
+
+/* Acerca de Nosotros */
+.about-us {
+    background-color: #f9f9f9;
+    padding: 130px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.about-us img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-us-text {
+    width: 50%;
+    padding-left: 150px;
+    text-align: justify;
+}
+
+.about-us-text h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.about-us-text p {
+    margin-top: 25px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Banner de Empresas */
+.company-banner {
+    border-top: solid 3px #0e1e22;
+    border-bottom: solid 3px #0e1e22;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.company-banner h2 {
+    font-size: 25px;
+    margin-bottom: 60px;
+    color: black;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.company-logos img {
+    max-width: 150px; /* Ajusta el tamaño de los logos según sea necesario */
+    height: auto;
+}
+
+/* Sección Formulario de Contacto */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.form-container {
+    padding: 20px;
+    display: flex;
+    max-width: 1200px;
+    width: 50%;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    flex: 1;
+    padding: 20px;
+}
+
+form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 70px;
+    font-size: 20px;
+}
+
+form button {
+    background-color: #EF7A00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+}
+
+.form-image {
+    flex: 1;
+    text-align: center;
+}
+
+.form-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sección Comentarios */
+.comments h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.comments-container {
+    background-image: url('../images/comentarios-clientes-fondos.png'); /* Ruta a tu imagen de fondo */ 
+    background-size: cover; /* Ajusta la imagen para que se contenga dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #00264D;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
