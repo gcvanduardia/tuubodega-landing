@@ -173,6 +173,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative; /* Añade posición relativa para que los elementos hijos con posición absoluta se posicionen respecto a esta sección */
+    overflow: hidden;
 }
 
 .product-card {
@@ -184,7 +185,7 @@ body {
     width: 80%;
     z-index: 1;
     text-align: left; /* Alinea el texto a la izquierda */
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .product-card img {
@@ -231,7 +232,7 @@ body {
 
 .floating-image2 {
     position: absolute;
-    bottom: -40px;
+    bottom: 0px;
     right: -70px;
     width: 350px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto;
@@ -241,7 +242,7 @@ body {
 /* Acerca de Nosotros */
 .about-us {
     background-color: #f9f9f9;
-    padding: 130px 0px;
+    padding: 70px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,7 +322,7 @@ body {
     width: 50%;
     align-items: center;
     border-radius: 50px;
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 form {
@@ -368,6 +369,91 @@ form button {
     border-radius: 10px;
 }
 
+/* Sección Newsletter */
+.newsletter {
+    background-color: #04546b;
+    color: white;
+    padding: 50px 0px;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsletter-text-container {
+    width: 50%;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.newsletter h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #EF7A00;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.newsletter h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.newsletter p {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 90%;
+    text-align: justify;
+}
+
+.newsletter-form {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    height: 70px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #fff;
+    padding-right: 120px; /* Espacio para el botón */
+}
+
+.newsletter-form input::placeholder {
+    color: #fff; /* Cambia el color del placeholder */
+    opacity: 0.5; /* Asegura que el color se aplique completamente */
+}
+
+.newsletter-form button {
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    background-color: #EF7A00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+}
+
+
 /* Sección Comentarios */
 .comments h2{
     text-align: center;
@@ -384,6 +470,67 @@ form button {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+}
+
+.comments{
+    margin: 60px 0px;
+    width: 100%;
+}
+
+/* Sección Informacion Adicional */
+.additional-info {
+    background: url('../images/ventas-consolidadas-fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 40%; 
+    max-width: 1200px; 
+}
+
+.info-item {
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+.info-item h2{
+    font-size: 30px;
+    color: #EF7A00;
+}
+
+.info-item p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.info-text{
+    width: 40%;
+    color: #fff;
+}
+
+.info-text h2{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.info-text p{
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 /* Footer */
